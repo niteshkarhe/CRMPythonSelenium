@@ -18,11 +18,11 @@ class TestLogin(unittest.TestCase):
     
     #testData = ExcelDataReader('contact_pg_testdata', "Sheet2", 'Login Test').get_test_data()
     
-    @parameterized.expand([
+    '''@parameterized.expand([
         ["foo", "a", "a",],
         ["bar", "a", "b"],
         ["lee", "b", "b"],
-    ])
+    ])'''
     
     @pytest.fixture(autouse=True)
     def login(self, setUp):

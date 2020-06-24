@@ -132,8 +132,5 @@ class ExcelDataReader():
             print(traceback.print_exc())
         return None
     
-    def add_sheet(self, wb, sheet_name):
-        wb.
-    
 # o=ExcelDataReader('contact_pg_testdata', "Sheet2", 'Login Test')
 # print(o.get_test_data())
