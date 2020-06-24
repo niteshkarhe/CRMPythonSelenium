@@ -35,14 +35,14 @@ class TestLogin(unittest.TestCase):
         BaseFixture.log.info('#### Verify User is able to login and save Contact Info ####')
         BaseFixture.testdata_setup(ExcelReader('contact_pg_testdata', "Sheet1", 'Verify User is able to login and save Contact Info').get_test_data())
 
-#         login=LoginPage()
-#         home_page=login.login()
-#         home_page.is_homepage_displayed()
-#         contact_page=home_page.goto_contacts_page()
-#         createnewcontact_page=contact_page.click_contactpg_new_button()
-#         createnewcontact_page.is_contact_new_page_displayed()
-#         createnewcontact_page.fill_form()
-#         createnewcontact_page.click_save_button()
+        login=LoginPage()
+        home_page=login.login()
+        home_page.is_homepage_displayed()
+        contact_page=home_page.goto_contacts_page()
+        createnewcontact_page=contact_page.click_contactpg_new_button()
+        createnewcontact_page.is_contact_new_page_displayed()
+        createnewcontact_page.fill_form()
+        createnewcontact_page.click_save_button()
     
     @pytest.mark.skip(reason="Temporay disabled") 
     def test_one_login(self):
