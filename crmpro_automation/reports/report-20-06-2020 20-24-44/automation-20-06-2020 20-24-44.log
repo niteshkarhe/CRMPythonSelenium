@@ -1,0 +1,58 @@
+06/20/2020 08:24:57 PM - BaseFixture - INFO - #### Verify User is able to login and save Contact Info ####
+06/20/2020 08:24:58 PM - BaseFixture - INFO - Is Login Page loaded?: complete
+06/20/2020 08:24:58 PM - BaseFixture - INFO - Login page is displayed
+06/20/2020 08:24:58 PM - BaseFixture - INFO - Text is entered in element with locator [email] and locatortype [name].
+06/20/2020 08:24:58 PM - BaseFixture - INFO - Username is entered
+06/20/2020 08:24:58 PM - BaseFixture - INFO - Text is entered in element with locator [password] and locatortype [name].
+06/20/2020 08:24:58 PM - BaseFixture - INFO - Password is entered
+06/20/2020 08:24:58 PM - BaseFixture - INFO - Element with locator [//div[text()='Login']] and locatortype [xpath] is clicked.
+06/20/2020 08:24:58 PM - BaseFixture - INFO - Login button is clicked
+06/20/2020 08:24:58 PM - BaseFixture - INFO - Is Home Page loaded?: complete
+06/20/2020 08:25:02 PM - BaseFixture - INFO - Home page is displayed
+06/20/2020 08:25:02 PM - BaseFixture - INFO - Element with locator [a[href="/contacts"]] and locatortype [css] is clicked.
+06/20/2020 08:25:02 PM - BaseFixture - INFO - Contact menu link is clicked
+06/20/2020 08:25:08 PM - BaseFixture - INFO - Element with locator [//button[text()='New']] and locatortype [xpath] is clicked.
+06/20/2020 08:25:08 PM - BaseFixture - INFO - New Button is clicked
+06/20/2020 08:25:10 PM - BaseFixture - INFO - Is Create New Contacts Page loaded?: complete
+06/20/2020 08:25:10 PM - BaseFixture - INFO - Create New Contacts is displayed
+06/20/2020 08:25:11 PM - BaseFixture - INFO - Text is entered in element with locator [first_name] and locatortype [name].
+06/20/2020 08:25:12 PM - BaseFixture - INFO - Text is entered in element with locator [last_name] and locatortype [name].
+06/20/2020 08:25:12 PM - BaseFixture - INFO - Text is entered in element with locator [middle_name] and locatortype [name].
+06/20/2020 08:25:13 PM - BaseFixture - INFO - Text is entered in element with locator [//div[@name='company']/input] and locatortype [xpath].
+06/20/2020 08:25:13 PM - BaseFixture - INFO - Text is entered in element with locator [//label[text()='Tags']/../label[@for='tags']//input] and locatortype [xpath].
+06/20/2020 08:25:17 PM - BaseFixture - INFO - Mouse cursor is moved and clicked to element with locator [//label[text()='Tags']/..//div[@role='option']] and locatortype [xpath].
+06/20/2020 08:25:18 PM - BaseFixture - INFO - Mouse cursor is moved and clicked to element with locator [//label[text()='Email']] and locatortype [xpath].
+06/20/2020 08:25:22 PM - BaseFixture - INFO - Text is entered in element with locator [//input[@placeholder='Email address']] and locatortype [xpath].
+06/20/2020 08:25:23 PM - BaseFixture - INFO - Mouse cursor is moved and clicked to element with locator [//label[text()='Category']/../div] and locatortype [xpath].
+06/20/2020 08:25:23 PM - BaseFixture - INFO - Element with locator [//label[text()='Category']/../div[@name='category']/div[contains(@class, 'menu transition')]/div[2]] and locatortype [xpath] is clicked.
+06/20/2020 08:25:24 PM - BaseFixture - INFO - Mouse cursor is moved and clicked to element with locator [//label[text()='Status']/../div] and locatortype [xpath].
+06/20/2020 08:25:24 PM - BaseFixture - INFO - Element with locator [//label[text()='Status']/../div[@name='status']/div[contains(@class, 'menu transition')]/div[3]] and locatortype [xpath] is clicked.
+06/20/2020 08:25:25 PM - BaseFixture - INFO - Text is entered in element with locator [day] and locatortype [name].
+06/20/2020 08:25:25 PM - BaseFixture - INFO - Mouse cursor is moved and clicked to element with locator [//div[@name='month']//div] and locatortype [xpath].
+06/20/2020 08:25:26 PM - BaseFixture - INFO - Element with locator [//div[@name='month']//div[@role='option'][12]] and locatortype [xpath] is clicked.
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Text is entered in element with locator [year] and locatortype [name].
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: firstname_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: lastname_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: middlename_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: company_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: tags_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: email_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: category_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: status_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: birthday_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: birthmonth_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Value is entered/ selected for field: birthyear_input
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Form is filled completely
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Element with locator [//button[text()='Save']] and locatortype [xpath] is clicked.
+06/20/2020 08:25:27 PM - BaseFixture - INFO - Create New Contacts page Save button is clicked
+06/20/2020 08:25:43 PM - BaseFixture - INFO - #### This Test case assert fail ####
+06/20/2020 08:25:43 PM - BaseFixture - INFO - Is Login Page loaded?: complete
+06/20/2020 08:25:44 PM - BaseFixture - INFO - Login page is displayed
+06/20/2020 08:25:44 PM - BaseFixture - INFO - Text is entered in element with locator [email] and locatortype [name].
+06/20/2020 08:25:44 PM - BaseFixture - INFO - Username is entered
+06/20/2020 08:25:44 PM - BaseFixture - INFO - Text is entered in element with locator [password] and locatortype [name].
+06/20/2020 08:25:44 PM - BaseFixture - INFO - Password is entered
+06/20/2020 08:25:44 PM - BaseFixture - INFO - Element with locator [//div[text()='Login']] and locatortype [xpath] is clicked.
+06/20/2020 08:25:44 PM - BaseFixture - INFO - Login button is clicked
+06/20/2020 08:25:47 PM - BaseFixture - INFO - Report file path and assets folder path is updated in report_resources.txt
+06/20/2020 08:25:49 PM - BaseFixture - INFO - ChromeDriver Service is stopped and Browser is closed.
