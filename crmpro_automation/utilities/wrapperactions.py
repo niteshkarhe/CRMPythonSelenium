@@ -146,7 +146,6 @@ class ActionClass(ExplicitWaits):
         try:
             actions = ActionChains(self.driver)
             element = self.get_webelement(locatortype, locator)
-            #JsExecutorMethods().js_scroll_into_view(locatortype, locator)
             actions.move_to_element(element).click(element).perform()
             self.log.info(
                 'Mouse cursor is moved and clicked to element with locator [' + locator + '] and locatortype [' + locatortype + '].')
