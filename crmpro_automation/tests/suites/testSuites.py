@@ -10,7 +10,8 @@ from PyTestFramework.crmpro_automation.tests.login_test.login_test import TestLo
 class RunSuite(unittest.TestSuite):
         def suite(self):
             suite = unittest.TestSuite()
-            suite.addTest(TestLogin('test_login'))
+            suite.addTest(TestLogin('test_demo'))
+            #suite.addTest(TestLogin('test_login'))
             #suite.addTest(TestLogin('test_one_login'))
             return suite
 

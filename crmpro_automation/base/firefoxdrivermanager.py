@@ -1,4 +1,4 @@
-from base.drivermanager import DriverManager
+from PyTestFramework.crmpro_automation.base.drivermanager import DriverManager
 
 class FirefoxDriverManager(DriverManager):
     

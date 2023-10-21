@@ -1,2 +1,8 @@
 /reports/
 /tests/login_test/__pycache__/
+/venv/
+/.idea/
+/.settings/
+/__pycache__/
+
+*.pyc

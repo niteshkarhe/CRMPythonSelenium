@@ -12,28 +12,25 @@ from PyTestFramework.crmpro_automation.filereader.excel_datareader import ExcelD
 from parameterized import parameterized
 
 @pytest.mark.usefixtures("setUp")
-class TestLogin(unittest.TestCase):
+class TestLogin():
     __driver=None
     __environment_dict={}
-    
-    #testData = ExcelDataReader('contact_pg_testdata', "Sheet2", 'Login Test').get_test_data()
-    
-    '''@parameterized.expand([
-        ["foo", "a", "a",],
-        ["bar", "a", "b"],
-        ["lee", "b", "b"],
-    ])'''
-    
+
+    def get_excel_data(testname):
+        return ExcelReader('contact_pg_testdata', "Sheet2", testname).get_test_data()
+
     @pytest.fixture(autouse=True)
     def login(self, setUp):
         #print('This is login method')
         QEEnvironment.set_environment_dict(self.environment)
         #self.__driver=self.driver.get_driver()
         BaseFixture.driver_setup(self.driver.get_driver())
-    
-    def test_login(self):
+
+    @pytest.mark.parametrize("row", ExcelReader('contact_pg_testdata', "Sheet2", 'Verify User is able to login and save Contact Info').get_test_data())
+    def test_login(self, row):
         BaseFixture.log.info('#### Verify User is able to login and save Contact Info ####')
-        BaseFixture.testdata_setup(ExcelReader('contact_pg_testdata', "Sheet1", 'Verify User is able to login and save Contact Info').get_test_data())
+        #BaseFixture.testdata_setup(ExcelReader('contact_pg_testdata', "Sheet1", 'Verify User is able to login and save Contact Info').get_test_data())
+        BaseFixture.testdata_setup(row)
 
         login=LoginPage()
         home_page=login.login()
@@ -43,7 +40,7 @@ class TestLogin(unittest.TestCase):
         createnewcontact_page.is_contact_new_page_displayed()
         createnewcontact_page.fill_form()
         createnewcontact_page.click_save_button()
-    
+
     @pytest.mark.skip(reason="Temporay disabled") 
     def test_one_login(self):
         BaseFixture.log.info('#### This Test case assert fail ####')

@@ -13,8 +13,8 @@ class HeaderInterface(metaclass=ABCMeta):
     def click_new_button(self):
         flag=True
         try:
-            self.new_btn_xpath="//button[text()='New']"
-            ClickActions().click_element('xpath', self.new_btn_xpath)
+            self.create_btn_xpath="//button[text()='Create']/parent::a"
+            ClickActions().click_element('xpath', self.create_btn_xpath)
             #JsExecutorMethods.js_click('xpath', self.new_btn_xpath)
         except:
             flag=False

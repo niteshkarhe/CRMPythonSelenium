@@ -46,10 +46,10 @@ class ChromeDriverManager(DriverManager):
         chrome_option.add_argument("--disable-infobars")
         chrome_option.add_argument("--start-maximized")
         chrome_option.add_argument("--disable-popup-blocking")
-        capabilities = DesiredCapabilities.CHROME.copy()
-        capabilities['browser']='chrome'
-        capabilities=chrome_option.to_capabilities()
-        self.driver=webdriver.Remote(self.__chservice.service_url, desired_capabilities = capabilities)
+        #capabilities = DesiredCapabilities.CHROME.copy()
+        #capabilities['browser']='chrome'
+        #capabilities=chrome_option.to_capabilities()
+        self.driver=webdriver.Chrome(options = chrome_option)
         self.edriver = EventFiringWebDriver(self.driver, EventListener())
         self.edriver.implicitly_wait(QEEnvironment.get_environment_dict().get('ImplicitWait'))
         self.edriver.get(QEEnvironment.get_environment_dict().get('URL'))

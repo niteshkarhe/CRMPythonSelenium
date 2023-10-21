@@ -28,7 +28,7 @@ class DriverManager(ABC):
     def get_driver(self):
         if self.driver==None:
             print('################ First time Starting service')
-            self.start_service()
+            #self.start_service()
             self.create_driver()
         else:
             print('################ Only creating driver')

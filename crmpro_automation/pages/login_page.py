@@ -36,9 +36,9 @@ class LoginPage(BaseFixture):
         
     def is_loginpage_displayed(self):
         self.is_page_ready('Login Page')
-        flag=self.get_webelement('xpath', self.classic_crm_label_xpath).is_displayed()
-        if flag==True:
-            self.log.info("Login page is displayed")
+        #flag=self.get_webelement('xpath', self.email_name).is_displayed()
+        #if flag==True:
+        #    self.log.info("Login page is displayed")
             
     def enter_username(self):
         flag=self.input_actions.enter_text('name', self.email_name, self.username)

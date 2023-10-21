@@ -7,7 +7,7 @@ Created on Mar 14, 2020
 import os
 import traceback
 
-from filereader.xml_reader import XmlReader
+from PyTestFramework.crmpro_automation.filereader.xml_reader import XmlReader
 
 class EnvironmentReader():
     

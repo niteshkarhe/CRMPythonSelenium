@@ -1,2 +1,2 @@
-D:/NK/Python/PyTestFramework/crmpro_automation/reports/report-25-06-2020 01-39-51/report.html
-D:/NK/Python/PyTestFramework/crmpro_automation/reports/report-25-06-2020 01-39-51/assets
+E:/NK/PythonProject/PyTestFramework/crmpro_automation/reports/report-21-10-2023 15-58-11/report.html
+E:/NK/PythonProject/PyTestFramework/crmpro_automation/reports/report-21-10-2023 15-58-11/assets
