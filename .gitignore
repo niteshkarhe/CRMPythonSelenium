@@ -1,0 +1,6 @@
+/venv/
+/.idea/
+/crmpro_automation/reports/
+/crmpro_automation/.idea/
+
+*.pyc
